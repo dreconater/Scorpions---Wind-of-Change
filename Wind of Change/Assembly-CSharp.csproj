@@ -94,6 +94,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\Scripts\MainMenuEngine.cs" />
     <Compile Include="Assets\Scripts\ButtonHoverUnHover.cs" />
+    <Compile Include="Assets\Scripts\GameSettings.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
