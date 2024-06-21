@@ -1,0 +1,70 @@
+Below is the documentation text for my scripts.
+
+---
+
+### MainMenuEngine.cs Documentation
+
+#### Class: `MainMenuEngine`
+Handles the main menu functionality, including showing levels, toggling music, and quitting the game.
+
+##### Variables:
+- `public Animator Buttons`: Animator for the main menu buttons.
+- `public Button PlayBtn`: Button to start the game.
+- `public Button MusicOnOFFButton`: Button to toggle music on/off.
+- `public TMP_Text MusicBtnText`: Text display for the music button.
+- `public Button QuitButton`: Button to quit the game.
+- `public AudioSource BgAudio`: Background music audio source.
+- `public Animator Levels`: Animator for the level selection screen.
+- `public Button BackToMenuBtn`: Button to go back to the main menu.
+- `publicGameObject Fade`: GameObject used for fading transitions.
+
+##### Methods:
+- `void Awake()`: Initializes button listeners.
+- `void Start()`: Sets the initial state of UI elements and loads music settings.
+- `IEnumerator ShowLevels()`: Coroutine to show the level selection screen.
+- `IEnumerator BackToMenu()`: Coroutine to go back to the main menu.
+- `void MusicOnOff()`: Toggles the background music on and off.
+- `public void ClickedLevel(TMP_Text textBox)`: Starts the game at the selected level.
+- `IEnumerator OpenGameScene()`: Coroutine to load the game scene.
+- `void QuitGame()`: Quit game or logs a message when the quit button is clicked in the editor.
+
+---
+
+### GameSettings.cs Documentation
+
+#### Class: `GameSettings`
+Singleton class to manage game settings such as selected level and music preference.
+
+##### Variables:
+- `private static GameSettings instance`: Singleton instance of the `GameSettings` class.
+- `public int MusicOnOff`: Stores the music on/off setting.
+- `public string Level`: Stores the selected level.
+
+##### Properties:
+- `public static GameSettings Instance`: Returns the singleton instance of the `GameSettings` class.
+
+##### Methods:
+- `void Awake()`: Ensures only one instance of the class exists and persists across scene loads.
+
+---
+
+### ButtonHoverUnHover.cs Documentation
+
+#### Class: `ButtonHoverUnHover`
+Handles button hover, unhover, and click effects.
+
+##### Variables:
+- `private Vector3 originalScale`: Original scale of the button.
+- `private bool isHovering`: Indicates whether the button is being hovered over.
+- `private float scaleFactor`: Scale factor for the button when hovered.
+- `private float animationDuration`: Duration of the hover animation.
+- `private AudioSource audioSource`: Audio source component for playing click sound.
+
+##### Methods:
+- `void Start()`: Initializes the audio source and original scale.
+- `void Update()`: Updates the button scale based on hover state.
+- `public void OnPointerEnter(PointerEventData eventData)`: Handles the pointer enter event.
+- `public void OnPointerExit(PointerEventData eventData)`: Handles the pointer exit event.
+- `public void OnPointerClick(PointerEventData eventData)`: Handles the pointer click event and plays the click sound.
+
+---

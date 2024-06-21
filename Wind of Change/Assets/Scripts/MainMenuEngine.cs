@@ -100,5 +100,6 @@ public class MainMenuEngine : MonoBehaviour
 
     void QuitGame() {
         Debug.Log("This will not work in the Editor.");
+        Application.Quit();
     }
 }
