@@ -30,41 +30,89 @@ Handles the main menu functionality, including showing levels, toggling music, a
 
 ---
 
+### GameEngine.cs Documentation
+
+#### Class: `GameEngine`
+Manages the main gameplay mechanics including card setup, timer, scoring, game over conditions, and UI interactions.
+
+##### Variables:
+- `Button MenuBtn`: Button to return to the main menu.
+- `Sprite[] Sprites`: Array of sprites for card icons.
+- `Card CardPrefab`: Prefab of the card object.
+- `GridLayoutGroup Container`: Grid layout group for card positioning.
+- `Animator Fade`: Animator for fade-in/fade-out effects.
+- `AudioSource bgAudio`: Background audio source.
+- `AudioSource GameAudio`: Game audio source.
+- `AudioClip WrongAudio`: Audio clip for wrong match sound.
+- `AudioClip RightAudio`: Audio clip for correct match sound.
+- `List<Card> Cards`: List of instantiated card objects.
+- `TMP_Text TimerText`: Text component displaying the game timer.
+- `float TotalTime`: Total time available for the game.
+- `float timeRemaining`: Time remaining in the game.
+- `bool timerRunning`: Flag indicating if the timer is running.
+- `TMP_Text ScoreText`: Text component displaying the player's score.
+- `int score`: Current score of the player.
+- `int maximumScore`: Maximum achievable score in the current game session.
+- `GameObject WinWindow`: GameObject displaying the win message.
+- `GameObject GameOverWindow`: GameObject displaying the game over message.
+- `Button RestartBtn`: Button to restart the game.
+- `Button GoToMenuBtn`: Button to return to the main menu.
+
+##### Methods:
+- `void Awake()`: Initializes button listeners for menu navigation.
+- `IEnumerator Start()`: Sets up the game based on selected level and initializes UI and audio components.
+- `void Setup(GameSettings.Level level)`: Sets up the game grid, timer, and card count based on selected difficulty level.
+- `private void SetupContainer(Vector2 cellSize, Vector2 spacing, int constraintCount)`: Sets up the container properties for card layout.
+- `private void CreateCards(int count)`: Instantiates cards and assigns click listeners.
+- `IEnumerator CardClick(Card clickedCard)`: Coroutine to handle card click interactions including matching logic and sound effects.
+- `void AssignIcons()`: Assigns unique icons to the cards based on game settings.
+- `List<Sprite> GetUniqueRandomSprites(int count)`: Retrieves a list of unique random sprites from the available pool.
+- `void Shuffle<T>(T[] array)`: Shuffles the array elements.
+- `void Update()`: Updates the game timer and checks game over conditions.
+- `void UpdateTimerText()`: Updates the timer text displayed in the UI.
+- `public void AddScore(int amount)`: Adds score and updates the score text.
+- `void UpdateScoreText()`: Updates the score text and displays win window if conditions are met.
+- `public void StopTimer()`: Stops the game timer.
+- `void GameOver()`: Displays the game over window and stops the game.
+- `void GoToMenu()`: Initiates transition to the main menu scene.
+- `void ChangeScene()`: Changes the scene to the main menu after fade-out.
+
+---
+
+### Card.cs Documentation
+
+#### Class: `Card`
+Represents a card object with methods to open and close the card.
+
+##### Variables:
+- `Animator cardAnim`: Animator component for card animations.
+- `AudioSource clickingAudio`: Audio source for card click sound.
+- `Image Icon`: Image component displaying the card icon.
+
+##### Methods:
+- `void Start()`: Initializes the animator and audio components.
+- `public void Clicked()`: Plays the card open animation and click sound.
+- `public void CloseCard()`: Plays the card close animation.
+
+---
+
 ### GameSettings.cs Documentation
 
 #### Class: `GameSettings`
-Singleton class to manage game settings such as selected level and music preference.
+Singleton class to manage game settings such as music preference and selected game level.
 
 ##### Variables:
 - `private static GameSettings instance`: Singleton instance of the `GameSettings` class.
 - `public int MusicOnOff`: Stores the music on/off setting.
-- `public string Level`: Stores the selected level.
+- `public Level SelectedLevel`: Stores the selected game level.
+
+##### Enum:
+- `enum Level`: Enumeration defining different game difficulty levels.
 
 ##### Properties:
 - `public static GameSettings Instance`: Returns the singleton instance of the `GameSettings` class.
 
 ##### Methods:
 - `void Awake()`: Ensures only one instance of the class exists and persists across scene loads.
-
----
-
-### ButtonHoverUnHover.cs Documentation
-
-#### Class: `ButtonHoverUnHover`
-Handles button hover, unhover, and click effects.
-
-##### Variables:
-- `private Vector3 originalScale`: Original scale of the button.
-- `private bool isHovering`: Indicates whether the button is being hovered over.
-- `private float scaleFactor`: Scale factor for the button when hovered.
-- `private float animationDuration`: Duration of the hover animation.
-- `private AudioSource audioSource`: Audio source component for playing click sound.
-
-##### Methods:
-- `void Start()`: Initializes the audio source and original scale.
-- `void Update()`: Updates the button scale based on hover state.
-- `public void OnPointerEnter(PointerEventData eventData)`: Handles the pointer enter event.
-- `public void OnPointerExit(PointerEventData eventData)`: Handles the pointer exit event.
-- `public void OnPointerClick(PointerEventData eventData)`: Handles the pointer click event and plays the click sound.
 
 ---

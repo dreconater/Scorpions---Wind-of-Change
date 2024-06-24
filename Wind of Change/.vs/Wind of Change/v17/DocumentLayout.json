@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "D:\\Unity Projects\\Github\\Scorpions---Wind-of-Change\\Wind of Change\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E0122506-AA1A-8E45-3C16-3D25F4219698}|Assembly-CSharp.csproj|d:\\unity projects\\github\\scorpions---wind-of-change\\wind of change\\assets\\scripts\\gameengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0122506-AA1A-8E45-3C16-3D25F4219698}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0122506-AA1A-8E45-3C16-3D25F4219698}|Assembly-CSharp.csproj|D:\\Unity Projects\\Github\\Scorpions---Wind-of-Change\\Wind of Change\\assets\\scripts\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0122506-AA1A-8E45-3C16-3D25F4219698}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E0122506-AA1A-8E45-3C16-3D25F4219698}|Assembly-CSharp.csproj|D:\\Unity Projects\\Github\\Scorpions---Wind-of-Change\\Wind of Change\\assets\\scripts\\mainmenuengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0122506-AA1A-8E45-3C16-3D25F4219698}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\mainmenuengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0122506-AA1A-8E45-3C16-3D25F4219698}|Assembly-CSharp.csproj|d:\\unity projects\\github\\scorpions---wind-of-change\\wind of change\\assets\\documentation.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{E0122506-AA1A-8E45-3C16-3D25F4219698}|Assembly-CSharp.csproj|solutionrelative:assets\\documentation.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E0122506-AA1A-8E45-3C16-3D25F4219698}|Assembly-CSharp.csproj|D:\\Unity Projects\\Github\\Scorpions---Wind-of-Change\\Wind of Change\\assets\\scripts\\gamesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E0122506-AA1A-8E45-3C16-3D25F4219698}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamesettings.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E0122506-AA1A-8E45-3C16-3D25F4219698}|Assembly-CSharp.csproj|D:\\Unity Projects\\Github\\Scorpions---Wind-of-Change\\Wind of Change\\assets\\scripts\\buttonhoverunhover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E0122506-AA1A-8E45-3C16-3D25F4219698}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\buttonhoverunhover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E0122506-AA1A-8E45-3C16-3D25F4219698}|Assembly-CSharp.csproj|D:\\Unity Projects\\Github\\Scorpions---Wind-of-Change\\Wind of Change\\assets\\scripts\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0122506-AA1A-8E45-3C16-3D25F4219698}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\card.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E0122506-AA1A-8E45-3C16-3D25F4219698}|Assembly-CSharp.csproj|d:\\unity projects\\github\\scorpions---wind-of-change\\wind of change\\assets\\scripts\\gameengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E0122506-AA1A-8E45-3C16-3D25F4219698}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gameengine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -35,63 +31,51 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Documentation.txt",
+              "DocumentMoniker": "D:\\Unity Projects\\Github\\Scorpions---Wind-of-Change\\Wind of Change\\Assets\\Documentation.txt",
+              "RelativeDocumentMoniker": "Assets\\Documentation.txt",
+              "ToolTip": "D:\\Unity Projects\\Github\\Scorpions---Wind-of-Change\\Wind of Change\\Assets\\Documentation.txt",
+              "RelativeToolTip": "Assets\\Documentation.txt",
+              "ViewState": "AQIAAFcAAAAAAAAAAAAAAB4AAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-06-24T11:43:35.732Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "GameEngine.cs",
               "DocumentMoniker": "D:\\Unity Projects\\Github\\Scorpions---Wind-of-Change\\Wind of Change\\Assets\\Scripts\\GameEngine.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameEngine.cs",
               "ToolTip": "D:\\Unity Projects\\Github\\Scorpions---Wind-of-Change\\Wind of Change\\Assets\\Scripts\\GameEngine.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameEngine.cs",
-              "ViewState": "AQIAAP0AAAAAAAAAAAAgwCMBAAAmAAAA",
+              "ViewState": "AQIAABkBAAAAAAAAAAAAwDwBAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-22T08:26:01.869Z",
+              "WhenOpened": "2024-06-24T11:44:01.402Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Card.cs",
               "DocumentMoniker": "D:\\Unity Projects\\Github\\Scorpions---Wind-of-Change\\Wind of Change\\Assets\\Scripts\\Card.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Card.cs",
               "ToolTip": "D:\\Unity Projects\\Github\\Scorpions---Wind-of-Change\\Wind of Change\\Assets\\Scripts\\Card.cs",
               "RelativeToolTip": "Assets\\Scripts\\Card.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAABMAAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-22T08:04:19.918Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainMenuEngine.cs",
-              "DocumentMoniker": "D:\\Unity Projects\\Github\\Scorpions---Wind-of-Change\\Wind of Change\\Assets\\Scripts\\MainMenuEngine.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\MainMenuEngine.cs",
-              "ToolTip": "D:\\Unity Projects\\Github\\Scorpions---Wind-of-Change\\Wind of Change\\Assets\\Scripts\\MainMenuEngine.cs",
-              "RelativeToolTip": "Assets\\Scripts\\MainMenuEngine.cs",
-              "ViewState": "AQIAAEUAAAAAAAAAAAAIwFEAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T11:03:51.81Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ButtonHoverUnHover.cs",
-              "DocumentMoniker": "D:\\Unity Projects\\Github\\Scorpions---Wind-of-Change\\Wind of Change\\Assets\\Scripts\\ButtonHoverUnHover.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ButtonHoverUnHover.cs",
-              "ToolTip": "D:\\Unity Projects\\Github\\Scorpions---Wind-of-Change\\Wind of Change\\Assets\\Scripts\\ButtonHoverUnHover.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ButtonHoverUnHover.cs",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwCcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-21T11:55:19.772Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "GameSettings.cs",
               "DocumentMoniker": "D:\\Unity Projects\\Github\\Scorpions---Wind-of-Change\\Wind of Change\\Assets\\Scripts\\GameSettings.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameSettings.cs",
               "ToolTip": "D:\\Unity Projects\\Github\\Scorpions---Wind-of-Change\\Wind of Change\\Assets\\Scripts\\GameSettings.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameSettings.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-21T11:47:55.334Z",
               "EditorCaption": ""
