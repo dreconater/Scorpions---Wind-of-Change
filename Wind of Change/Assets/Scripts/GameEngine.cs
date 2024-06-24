@@ -1,17 +1,27 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameEngine : MonoBehaviour
 {
+    [Header("Header")]
+    public Button MenuBtn;
+
+    [Space(10)]
+    [Header("Game")]
     public Card CardPrefab;
 
     public GridLayoutGroup Container;
 
-    public GameObject Fade;
+    public Animator Fade;
 
     private AudioSource bgAudio;
+
+    private void Awake()
+    {
+        MenuBtn.onClick.AddListener(GoToMenu);
+    }
 
     private IEnumerator Start()
     {
@@ -19,9 +29,10 @@ public class GameEngine : MonoBehaviour
 
         bgAudio = GetComponent<AudioSource>();
 
-        Fade.SetActive(true);
-        yield return new WaitForSeconds(2);
-        Fade.SetActive(false);
+        Fade.gameObject.SetActive(true);
+        Fade.Play("SlowCanvasGroupHide");
+        yield return new WaitForSeconds(1);
+        Fade.gameObject.SetActive(false);
     }
 
     void Setup(GameSettings.Level level) {
@@ -64,5 +75,15 @@ public class GameEngine : MonoBehaviour
                 }
                 break;
         }
+    }
+
+    void GoToMenu() {
+        Fade.gameObject.SetActive(true);
+        Fade.Play("SlowCanvasGroupShow");
+        Invoke("ChangeScene", 1f);
+    }
+
+    void ChangeScene() {
+        SceneManager.LoadScene("Menu");
     }
 }

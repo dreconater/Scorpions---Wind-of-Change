@@ -338,9 +338,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c0aa89a01032d64d87f68107dfc2dde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MenuBtn: {fileID: 1626153300}
   CardPrefab: {fileID: 4873299582375098146, guid: 5fc4c70ad6de92b43a0fb34788beafe6, type: 3}
   Container: {fileID: 866924242}
-  Fade: {fileID: 1872096465}
+  Fade: {fileID: 1872096471}
 --- !u!1 &463555622
 GameObject:
   m_ObjectHideFlags: 0

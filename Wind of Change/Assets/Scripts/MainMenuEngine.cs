@@ -24,7 +24,7 @@ public class MainMenuEngine : MonoBehaviour
 
     [Space(10)]
     [Header("Other")]
-    public GameObject Fade;
+    public Animator Fade;
 
     private void Awake()
     {
@@ -35,8 +35,13 @@ public class MainMenuEngine : MonoBehaviour
         BackToMenuBtn.onClick.AddListener(() => { StartCoroutine(BackToMenu()); });
     }
 
-    private void Start()
+    private IEnumerator Start()
     {
+        Fade.gameObject.SetActive(true);
+        Fade.Play("SlowCanvasGroupHide");
+        yield return new WaitForSeconds(1);
+        Fade.gameObject.SetActive(false);
+
         Buttons.gameObject.SetActive(true);
         Levels.gameObject.SetActive(false);
 
@@ -87,14 +92,15 @@ public class MainMenuEngine : MonoBehaviour
     public void ClickedLevel(int level) {
         GameSettings.Instance.SelectedLevel = (GameSettings.Level)level;
         GameSettings.Instance.MusicOnOff = PlayerPrefs.GetInt("BgMusic");
-        StartCoroutine(OpenGameScene());
+
+        Fade.gameObject.SetActive(true);
+        Fade.Play("SlowCanvasGroupShow");
+
+        Invoke("OpenGameScene", 1);
     }
 
-    IEnumerator OpenGameScene()
+    void OpenGameScene()
     {
-        yield return new WaitForSeconds(0.1f);
-        Fade.SetActive(true);
-        yield return new WaitForSeconds(0.7f);
         SceneManager.LoadScene("Game");
     }
 

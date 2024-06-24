@@ -680,7 +680,7 @@ MonoBehaviour:
   BgAudio: {fileID: 199350701}
   Levels: {fileID: 801157173}
   BackToMenuBtn: {fileID: 1869556847}
-  Fade: {fileID: 1929707560}
+  Fade: {fileID: 1929707565}
 --- !u!1 &280428054
 GameObject:
   m_ObjectHideFlags: 0
