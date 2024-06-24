@@ -339,6 +339,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MenuBtn: {fileID: 1626153300}
+  Sprites:
+  - {fileID: 21300000, guid: e0cd54d629a0bcd4db8cfe39a299ea90, type: 3}
+  - {fileID: 21300000, guid: a754e483251c0da4e8a84606fca4896a, type: 3}
+  - {fileID: 21300000, guid: 812b3be226fe72546969c90ff1830e6a, type: 3}
+  - {fileID: 21300000, guid: 1c5b8ed94ae68e14d96c31e26135b937, type: 3}
+  - {fileID: 21300000, guid: f3c4e1bf505c80946afe2a015a8b9981, type: 3}
+  - {fileID: 21300000, guid: 23b360227d9414e4ab03dcdf69089e3d, type: 3}
+  - {fileID: 21300000, guid: e29b74136bb732a49acbcae31af95de6, type: 3}
+  - {fileID: 21300000, guid: 1d38be9a2d077ad4b874c889377c1b33, type: 3}
+  - {fileID: 21300000, guid: e2762dccf002a764baa4498e31555fd8, type: 3}
+  - {fileID: 21300000, guid: b938095195281e84584fde189cfff18a, type: 3}
+  - {fileID: 21300000, guid: d38685d030845424fa10d30ee913e83c, type: 3}
+  - {fileID: 21300000, guid: 99095085537df9d48ae346c21bb2a468, type: 3}
+  - {fileID: 21300000, guid: c59c89a4430bf0a4e830bf0441689294, type: 3}
+  - {fileID: 21300000, guid: 176555c2d8b243c4583b438c56f98fd1, type: 3}
+  - {fileID: 21300000, guid: 695200654172dc94caa075e0e17257df, type: 3}
   CardPrefab: {fileID: 4873299582375098146, guid: 5fc4c70ad6de92b43a0fb34788beafe6, type: 3}
   Container: {fileID: 866924242}
   Fade: {fileID: 1872096471}
