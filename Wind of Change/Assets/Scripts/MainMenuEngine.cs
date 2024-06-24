@@ -84,8 +84,8 @@ public class MainMenuEngine : MonoBehaviour
         }
     }
 
-    public void ClickedLevel(TMP_Text textBox) { 
-        GameSettings.Instance.Level = textBox.text;
+    public void ClickedLevel(int level) {
+        GameSettings.Instance.SelectedLevel = (GameSettings.Level)level;
         GameSettings.Instance.MusicOnOff = PlayerPrefs.GetInt("BgMusic");
         StartCoroutine(OpenGameScene());
     }

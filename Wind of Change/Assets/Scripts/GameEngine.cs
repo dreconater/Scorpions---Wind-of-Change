@@ -15,7 +15,7 @@ public class GameEngine : MonoBehaviour
 
     private IEnumerator Start()
     {
-        Setup();
+        Setup(GameSettings.Instance.SelectedLevel);
 
         bgAudio = GetComponent<AudioSource>();
 
@@ -24,7 +24,45 @@ public class GameEngine : MonoBehaviour
         Fade.SetActive(false);
     }
 
-    void Setup() { 
-        
+    void Setup(GameSettings.Level level) {
+        switch (level)
+        {
+            case GameSettings.Level.TwoAndTwo:
+
+                Container.cellSize = new Vector2(300, 300);
+                Container.spacing = new Vector2(80, 40);
+                Container.constraintCount = 2;
+
+                for (int i = 0; i < 4; i++)
+                {
+                    var newCard = Instantiate(CardPrefab, Container.transform);
+                }
+                break;
+
+            case GameSettings.Level.TwoAndThree:
+
+                Container.cellSize = new Vector2(300, 300);
+                Container.spacing = new Vector2(80, 40);
+                Container.constraintCount = 2;
+
+                for (int i = 0; i < 6; i++)
+                {
+                    var newCard = Instantiate(CardPrefab, Container.transform);
+                }
+
+                break;
+
+            case GameSettings.Level.FiveAndSix:
+
+                Container.cellSize = new Vector2(120, 120);
+                Container.spacing = new Vector2(20, 40);
+                Container.constraintCount = 5;
+
+                for (int i = 0; i < 30; i++)
+                {
+                    var newCard = Instantiate(CardPrefab, Container.transform);
+                }
+                break;
+        }
     }
 }

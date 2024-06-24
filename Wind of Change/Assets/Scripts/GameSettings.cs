@@ -4,9 +4,16 @@ public class GameSettings : MonoBehaviour
 {
     private static GameSettings instance;
 
+    public enum Level
+    {
+        TwoAndTwo,
+        TwoAndThree,
+        FiveAndSix
+    }
+
     public int MusicOnOff;
 
-    public string Level;
+    public Level SelectedLevel;
 
     public static GameSettings Instance
     {
